@@ -1,0 +1,42 @@
+body {
+  background: black;
+}
+
+@-webkit-keyframes trocarCorGravata {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes trocarCorGravata {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+img {
+  width: 600px;
+  opacity: 10%;
+  border: 1px solid red;
+  -webkit-animation: trocarCorGravata 60s alternate infinite ease-in-out;
+          animation: trocarCorGravata 60s alternate infinite ease-in-out;
+}
+
+body {
+  background: linear-gradient(290deg, black 0%, black 20%, #121212 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
