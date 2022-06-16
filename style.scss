@@ -1,6 +1,4 @@
-body {
-    background: black;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
 
 @keyframes trocarCorGravata {
     0% {
@@ -14,15 +12,44 @@ body {
 
 img {
     width: 600px;
-    opacity: 10%;
-    border: 1px solid red;
+    opacity: 50%;
     animation: trocarCorGravata 60s alternate infinite ease-in-out;
 }
 
 body {
-    background: linear-gradient(290deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 20%, rgba(18, 18, 18, 1) 100%);
+    // background: linear-gradient(290deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 20%, rgba(18, 18, 18, 1) 100%);
+    background: #000;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100%;
+    // height: 100%;
     width: 100%;
+}
+
+#app {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#building_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    span {
+        border-radius: 4px;
+        cursor: default;
+        user-select: none;
+        border: 1px solid #ffb2b2;
+        font-size: 32px;
+        background: rgb(255, 61, 61);
+        padding: 4px 16px;
+        color: #dedede;
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-family: "Roboto Slab", serif;
+    }
 }

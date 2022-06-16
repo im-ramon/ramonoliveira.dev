@@ -1,7 +1,4 @@
-body {
-  background: black;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
 @-webkit-keyframes trocarCorGravata {
   0% {
     -webkit-filter: hue-rotate(0deg);
@@ -12,7 +9,6 @@ body {
             filter: hue-rotate(360deg);
   }
 }
-
 @keyframes trocarCorGravata {
   0% {
     -webkit-filter: hue-rotate(0deg);
@@ -26,17 +22,58 @@ body {
 
 img {
   width: 600px;
-  opacity: 10%;
-  border: 1px solid red;
+  opacity: 50%;
   -webkit-animation: trocarCorGravata 60s alternate infinite ease-in-out;
           animation: trocarCorGravata 60s alternate infinite ease-in-out;
 }
 
 body {
-  background: linear-gradient(290deg, black 0%, black 20%, #121212 100%);
+  background: #000;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100%;
   width: 100%;
+}
+
+#app {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#building_text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#building_text span {
+  border-radius: 4px;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid #ffb2b2;
+  font-size: 32px;
+  background: #ff3d3d;
+  padding: 4px 16px;
+  color: #dedede;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-family: "Roboto Slab", serif;
 }
 /*# sourceMappingURL=style.css.map */
