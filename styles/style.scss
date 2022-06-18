@@ -1,0 +1,49 @@
+// BREAKPOINTS
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(290deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 20%, rgba(18, 18, 18, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+#content_container {
+    margin: 0.5em 1em;
+    max-width: $xxl;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 1.5em;
+    margin: 0 auto;
+}
+
+main {
+    background: #ff000050;
+}
+
+footer {
+    background: #0000ff30;
+}
+
+img {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transition: all 1s ease-in-out;
+
+    &:hover {
+        transition: all 1s ease-in-out;
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    }
+}
