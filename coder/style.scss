@@ -1,0 +1,57 @@
+// ------------------------------------------- //
+
+$coder-cor_1: #1b222a;
+$coder-cor_2: #171c22;
+
+#coder {
+    font-family: sans-serif;
+    background: $coder-cor_1;
+    user-select: none;
+    width: 672px;
+    height: 375px;
+    border-radius: 0.5em;
+    display: grid;
+    grid-template:
+        "sidebar menu" 2em
+        "sidebar main"
+        "footer footer" 1em
+        / 50px;
+}
+
+#coder-sidebar {
+    background: $coder-cor_1;
+    background: rgba(255, 0, 0, 0.425);
+    grid-area: sidebar;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1em 0;
+    img {
+        width: 2em;
+    }
+}
+
+#coder-menu {
+    background: $coder-cor_2;
+    background: rgba(0, 0, 255, 0.562);
+    grid-area: menu;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+    align-items: center;
+
+    img {
+        width: 1.3em;
+    }
+}
+
+#coder-main {
+    grid-area: main;
+}
+
+#coder-footer {
+    background: $coder-cor_2;
+    background: rgba(255, 255, 0, 0.459);
+    grid-area: footer;
+}

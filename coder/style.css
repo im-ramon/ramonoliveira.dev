@@ -1,0 +1,67 @@
+#coder {
+  font-family: sans-serif;
+  background: #1b222a;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 672px;
+  height: 375px;
+  border-radius: 0.5em;
+  display: -ms-grid;
+  display: grid;
+  grid-template: "sidebar menu" 2em "sidebar main" "footer footer" 1em / 50px;
+}
+
+#coder-sidebar {
+  background: #1b222a;
+  background: rgba(255, 0, 0, 0.425);
+  grid-area: sidebar;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1em 0;
+}
+
+#coder-sidebar img {
+  width: 2em;
+}
+
+#coder-menu {
+  background: #171c22;
+  background: rgba(0, 0, 255, 0.562);
+  grid-area: menu;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#coder-menu img {
+  width: 1.3em;
+}
+
+#coder-main {
+  grid-area: main;
+}
+
+#coder-footer {
+  background: #171c22;
+  background: rgba(255, 255, 0, 0.459);
+  grid-area: footer;
+}
+/*# sourceMappingURL=style.css.map */
