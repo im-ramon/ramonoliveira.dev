@@ -10,6 +10,7 @@ $coder-cor_1: #1b222a;
 $coder-cor_2: #171c22;
 $coder-cor_3: #928990;
 $coder-cor_4: #ffffff10;
+$branco: #e1e1e1;
 
 // BREAKPOINTS
 $sm: 576px;
@@ -193,7 +194,7 @@ header {
 
     img#profile_photo {
         position: relative;
-        width: 75%;
+        width: 90%;
         clip-path: polygon(
             53% 0,
             61% 4%,
@@ -220,28 +221,63 @@ header {
 #coder {
     position: absolute;
     top: 130px;
-    right: 363px;
+    right: 414px;
     z-index: 2;
     transform: scale(82%);
     border-radius: 8px;
 }
 
+.content_item {
+    margin-top: 3em;
+}
+
 #content {
-    background: rgba(255, 255, 0, 0.5);
     padding: 1em 2em;
+    color: $branco;
 }
 
 #quem_sou {
-    background: #051937;
     display: grid;
     grid-template-columns: 2fr 5fr;
-    padding: 0 10em;
+    padding: 2em 10em;
 }
 
 #quem_sou-foto-area {
     img {
         width: 100%;
+        border-radius: 6px;
+        border: 2px solid #40ce9f;
+        box-shadow: -6px 8px 11px -3px #00000080, -13px 11px 0px 0px #40ce9f;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: -6px 8px 11px -3px #00000080, 0px 0px 0px 0px #40ce9f;
+            transition: all 0.3s ease-in-out;
+        }
     }
+}
+
+#quem_sou-texto {
+    padding-left: 2em;
+    display: flex;
+    flex-direction: column;
+
+    p {
+        text-align: justify;
+        text-indent: 2em;
+    }
+
+    #quem_sou-citacao {
+        margin-top: auto;
+        blockquote,
+        cite {
+            text-align: right;
+        }
+    }
+}
+
+#conhecimentos {
+    background: rgba(255, 0, 0, 0.274);
 }
 
 // ------ Footer ----- //

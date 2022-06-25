@@ -7,7 +7,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  width: 500px;
+  width: 440px;
   border-radius: 0.5em;
   display: -ms-grid;
   display: grid;
@@ -462,7 +462,7 @@ header {
 
 #welcome_art img#profile_photo {
   position: relative;
-  width: 75%;
+  width: 90%;
   -webkit-clip-path: polygon(53% 0, 61% 4%, 71% 27%, 70% 38%, 85% 44%, 93% 49%, 100% 65%, 100% 100%, 0 100%, 0 68%, 5% 59%, 13% 45%, 33% 38%, 31% 29%, 33% 15%, 41% 3%);
           clip-path: polygon(53% 0, 61% 4%, 71% 27%, 70% 38%, 85% 44%, 93% 49%, 100% 65%, 100% 100%, 0 100%, 0 68%, 5% 59%, 13% 45%, 33% 38%, 31% 29%, 33% 15%, 41% 3%);
   -webkit-filter: drop-shadow(0 0 0.75rem black);
@@ -473,29 +473,74 @@ header {
 #coder {
   position: absolute;
   top: 130px;
-  right: 363px;
+  right: 414px;
   z-index: 2;
   -webkit-transform: scale(82%);
           transform: scale(82%);
   border-radius: 8px;
 }
 
+.content_item {
+  margin-top: 3em;
+}
+
 #content {
-  background: rgba(255, 255, 0, 0.5);
   padding: 1em 2em;
+  color: #e1e1e1;
 }
 
 #quem_sou {
-  background: #051937;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 5fr;
       grid-template-columns: 2fr 5fr;
-  padding: 0 10em;
+  padding: 2em 10em;
 }
 
 #quem_sou-foto-area img {
   width: 100%;
+  border-radius: 6px;
+  border: 2px solid #40ce9f;
+  -webkit-box-shadow: -6px 8px 11px -3px #00000080, -13px 11px 0px 0px #40ce9f;
+          box-shadow: -6px 8px 11px -3px #00000080, -13px 11px 0px 0px #40ce9f;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#quem_sou-foto-area img:hover {
+  -webkit-box-shadow: -6px 8px 11px -3px #00000080, 0px 0px 0px 0px #40ce9f;
+          box-shadow: -6px 8px 11px -3px #00000080, 0px 0px 0px 0px #40ce9f;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#quem_sou-texto {
+  padding-left: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#quem_sou-texto p {
+  text-align: justify;
+  text-indent: 2em;
+}
+
+#quem_sou-texto #quem_sou-citacao {
+  margin-top: auto;
+}
+
+#quem_sou-texto #quem_sou-citacao blockquote,
+#quem_sou-texto #quem_sou-citacao cite {
+  text-align: right;
+}
+
+#conhecimentos {
+  background: rgba(255, 0, 0, 0.274);
 }
 
 footer {
