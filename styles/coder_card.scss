@@ -9,8 +9,8 @@ $coder-cor_4: #ffffff10;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: $coder-cor_1;
     user-select: none;
-    width: 672px;
-    height: 380px;
+    width: 500px;
+    // height: 320px;
     border-radius: 0.5em;
     display: grid;
     grid-template:
@@ -23,6 +23,7 @@ $coder-cor_4: #ffffff10;
 #coder-sidebar {
     grid-area: sidebar;
     display: grid;
+    font-weight: 300;
     grid-template-rows: 5fr 1fr;
 
     img {
@@ -99,6 +100,7 @@ $coder-cor_4: #ffffff10;
     grid-area: main;
     display: grid;
     grid-template-rows: 1fr 8fr;
+    background: $coder-cor_1;
 
     #coder-main-header {
         background: $coder-cor_2;
@@ -134,6 +136,7 @@ $coder-cor_4: #ffffff10;
             font-size: 12px;
             color: #fff;
             margin-left: 6px;
+            font-weight: 300;
         }
 
         img {
@@ -156,7 +159,6 @@ $coder-cor_4: #ffffff10;
 
     #coder-main-body {
         background: $coder-cor_1;
-        // background: red;
         border-right: 1px solid $coder-cor_4;
         margin-right: 0.7em;
         display: grid;
